@@ -5,8 +5,8 @@ var express = require('express')
   , TwitterStrategy = require('passport-twitter').Strategy
   , Schema = mongoose.Schema;
 
-var TWITTER_CONSUMER_KEY = "";
-var TWITTER_CONSUMER_SECRET = "";
+var TWITTER_CONSUMER_KEY = "whyh7fXj3FgTJ5IEmHVg"
+var TWITTER_CONSUMER_SECRET = "a7Z7X9HarAwo4rDniJAZdWJtwduMPazpNqkIVkEjaM";
 
 var UserSchema = new Schema({
   provider: String,

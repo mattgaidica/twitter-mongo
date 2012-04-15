@@ -1,17 +1,18 @@
-This is really a combined tutorial, stemmed from the amazing Jared Hanson and Pedro Teixeira. I just wanted to take a couple of their tutorials one step further and actually give an example of a working Twitter authentication using a Mongo database. Make sure you check out the tech, this is a common and really fun stack:
+This is really a combined tutorial, stemmed from the amazing Jared Hanson and Pedro Teixeira. I just wanted to take a couple of examples one step further and produce a working Twitter authentication project using a Mongo database. Make sure you check out the tech, this is a common (and really fun) stack:
 
 Node
 Express
 Mongoose
 Passport
 
-Check out my Github repo for the code. If you don't have Mongo installed, head over their Getting Started page. After you clone the repo, install the dependencies using npm and create a location for the data.
+Check out my Github repo for the code. If you don't have Mongo installed, head over their Quickstart page. After you clone the repo, create a location for the Mongo data.
 
-~/Sites/twitter-mongo : npm install
 ~/Sites/twitter-mongo : mkdir data
 
 Next, in another terminal start the Mongo database using the new data location.
 
 ~/Sites/twitter-mongo : mongod --dbpath ./data/
 
-Last thing to do is put in your Twitter consumer key and consumer secret in the "app.js" file (make a Twitter app). 
+Last thing to do is put in your Twitter consumer key and consumer secret in the "app.js" file (make a Twitter app). Run node.
+
+~/Sites/twitter-mongo : node app.js
