@@ -1,16 +1,17 @@
-<p>This is really a combined tutorial, stemmed from the amazing&nbsp;<a href="https://twitter.com/#!/jaredhanson" title="Jared Hanson" target="_blank">Jared Hanson</a>&nbsp;and&nbsp;<a href="https://twitter.com/#!/pedrogteixeira" title="Pedro Teixeira" target="_blank">Pedro Teixeira</a>. I just wanted to take a couple of their tutorials one step further and actually give an example of a working Twitter&nbsp;authentication&nbsp;using a Mongo database. Make sure you check out the tech, this is a common and really fun stack:</p>
-<div>
-<ul>
-<li><a href="http://nodejs.org/" title="Node.js" target="_blank">Node</a></li>
-<li><a href="http://expressjs.com/" title="Express.js" target="_blank">Express</a></li>
-<li><a href="http://mongoosejs.com/" title="Mongoose" target="_blank">Mongoose</a></li>
-<li><a href="http://passportjs.org/" title="Passport" target="_blank">Passport</a></li>
-</ul>
-<p>Check out my <a href="https://github.com/mattgaidica/twitter-mongo" title="twitter-mongo" target="_blank">Github repo</a> for the code. If you don't have Mongo installed, head over their Getting Started page. After you clone the repo, install the dependencies using npm and create a location for the data.</p>
-<pre class="prettyprint">~/Sites/twitter-mongo : npm install
+This is really a combined tutorial, stemmed from the amazing Jared Hanson and Pedro Teixeira. I just wanted to take a couple of their tutorials one step further and actually give an example of a working Twitter authentication using a Mongo database. Make sure you check out the tech, this is a common and really fun stack:
+
+Node
+Express
+Mongoose
+Passport
+
+Check out my Github repo for the code. If you don't have Mongo installed, head over their Getting Started page. After you clone the repo, install the dependencies using npm and create a location for the data.
+
+~/Sites/twitter-mongo : npm install
 ~/Sites/twitter-mongo : mkdir data
-</pre>
-<p>Next, in another terminal start the Mongo database using the new data location.</p>
-<pre class="prettyprint">~/Sites/twitter-mongo : mongod --dbpath ./data/</pre>
-<p>Last thing to do is put in your Twitter consumer key and consumer secret in the "app.js" file (<a href="https://dev.twitter.com/apps" title="Twitter apps" target="_blank">make a Twitter app</a>).&nbsp;</p>
-</div>
+
+Next, in another terminal start the Mongo database using the new data location.
+
+~/Sites/twitter-mongo : mongod --dbpath ./data/
+
+Last thing to do is put in your Twitter consumer key and consumer secret in the "app.js" file (make a Twitter app). 
